@@ -1,0 +1,36 @@
+.pp{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .left{
+    display: flex;
+    flex-direction:left;
+  left:0px;
+  
+  }
+  .right{
+   display: flex;
+    flex-direction:right;
+    left:500px;
+  
+  }
+  body{
+
+    perspective:100px;
+    .top{
+      transform: rotateX(90deg) ;
+  
+    }
+    .pp{perspective:100px;
+      .left{
+        transform: rotateY(90deg);
+      }
+      .right{
+        transform: rotateY(-90deg);
+      }
+    }
+    .bottom{
+      transform:rotateX(-90deg)
+    }
+  }
+  
